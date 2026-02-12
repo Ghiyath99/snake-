@@ -1,8 +1,7 @@
 # Hangman game
 # done by ghiyath
-<<<<<<< HEAD
 # project 1  
-
+g
 # Technology used
 
 # HTML
@@ -36,7 +35,5 @@
 
 ![alt text](<Screenshot (4).png>) ![alt text](<Screenshot (2).png>) ![alt text](<Screenshot (3).png>)
 
-=======
- #nake game for general assembly 
-,,,
->>>>>>> 20cc8991f9e82cc4385b7790302a7c515a334433
+
+

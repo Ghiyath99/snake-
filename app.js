@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const gameMessageEl = document.getElementById('game-message');
   const resetBtn = document.getElementById('reset-btn');
   
-  // Hangman SVG parts
+  // this is for  Hangman SVG parts
   const hangmanParts = {
     head: document.getElementById('head'),
     body: document.getElementById('body'),
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     face: document.getElementById('face')
   };
   
-  // Game variables
+  //  this is the Game variables 
   let selectedWord = '';
   let correctLetters = [];
   let wrongLetters = [];
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
       part.style.display = 'none';
     });
     
-    // Create word display
+    // this for the  word display
     wordDisplay.innerHTML = '';
     for (let i = 0; i < selectedWord.length; i++) {
       const letterEl = document.createElement('div');
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
       wordDisplay.appendChild(letterEl);
     }
     
-    // Create keyboard
+    // for the keyboard Create 
     keyboard.innerHTML = '';
     for (let i = 65; i <= 90; i++) {
       const letter = String.fromCharCode(i);
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   
-  // Handle letter guess
+  //  for Handle letter guess
   function handleGuess(letter) {
     if (gameOver || wrongLetters.includes(letter) || correctLetters.includes(letter)) return;
     
@@ -160,6 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Reset button
   resetBtn.addEventListener('click', initGame);
+  
   
   // Start the game
   initGame();
